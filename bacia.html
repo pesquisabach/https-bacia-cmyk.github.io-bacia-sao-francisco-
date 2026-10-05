@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bacia Hidrográfica do Rio São Francisco</title>
+<style>
+:root{
+  --blue:#0b5ea8; --blue2:#0a3d62; --cyan:#38bdf8;
+  --green:#238b57; --sand:#f4ead5; --ink:#17324d;
+  --white:#fff; --muted:#587086; --card:#ffffffeb;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);
+background:linear-gradient(180deg,#eaf8ff 0%,#f8fcfa 45%,#f3f0e7 100%);line-height:1.65}
+nav{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);
+border-bottom:1px solid #d9e8f0;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:10px}
+nav a{color:var(--blue2);text-decoration:none;font-weight:700;padding:8px 12px;border-radius:999px}
+nav a:hover{background:#e8f5ff}
+.hero{min-height:72vh;display:grid;place-items:center;text-align:center;padding:70px 20px;
+background:
+radial-gradient(circle at 20% 20%,#fff8 0 8%,transparent 28%),
+linear-gradient(135deg,#0b5ea8,#087f8a 58%,#238b57)}
+.hero-inner{max-width:900px;color:white}
+.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:.8rem;font-weight:800;opacity:.9}
+h1{font-size:clamp(2.4rem,7vw,5.5rem);line-height:.98;margin:16px 0}
+.hero p{font-size:clamp(1rem,2.4vw,1.3rem);max-width:720px;margin:0 auto 28px}
+.button{display:inline-block;background:white;color:var(--blue2);padding:12px 20px;border-radius:999px;
+font-weight:800;text-decoration:none;box-shadow:0 8px 25px #003a5a44}
+main{max-width:1050px;margin:auto;padding:40px 18px}
+section{padding:46px 0}
+h2{font-size:clamp(1.8rem,4vw,2.8rem);margin:0 0 14px}
+.lead{color:var(--muted);font-size:1.08rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-top:24px}
+.card{background:var(--card);border:1px solid #d9e8ef;border-radius:22px;padding:22px;
+box-shadow:0 10px 30px #0b5ea812}
+.card strong{display:block;font-size:1.55rem;color:var(--blue)}
+.card h3{margin-top:0}
+.pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#e5f5ed;color:#17633e;font-weight:800;font-size:.8rem}
+.timeline{display:grid;gap:14px;margin-top:22px}
+.region{border-left:5px solid var(--blue);background:white;border-radius:0 18px 18px 0;padding:18px 20px;
+box-shadow:0 7px 22px #17324d12}
+.region:nth-child(2){border-color:#159a72}.region:nth-child(3){border-color:#d49b2a}.region:nth-child(4){border-color:#8b5cf6}
+.uses{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:20px}
+.use{padding:18px;border-radius:18px;background:#edf8ff;text-align:center;font-weight:800}
+.note{background:linear-gradient(135deg,#0a3d62,#0b5ea8);color:white;border-radius:26px;padding:28px;margin-top:25px}
+footer{padding:35px 18px;text-align:center;color:#60778a;background:#eef3f5}
+.sources a{color:var(--blue);font-weight:700}
+@media(max-width:600px){nav{justify-content:flex-start;overflow:auto;flex-wrap:nowrap}.hero{min-height:65vh}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#sobre">Sobre</a><a href="#numeros">Números</a><a href="#regioes">Regiões</a>
+  <a href="#importancia">Importância</a><a href="#desafios">Desafios</a><a href="#fontes">Fontes</a>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Geografia • Recursos hídricos • Brasil</div>
+    <h1>Bacia Hidrográfica do Rio São Francisco</h1>
+    <p>Conheça a bacia do “Velho Chico”: seu território, suas regiões, seus usos e os principais desafios relacionados à água.</p>
+    <a class="button" href="#sobre">Explorar a página ↓</a>
+  </div>
+</header>
+
+<main>
+<section id="sobre">
+  <span class="pill">O que é?</span>
+  <h2>Uma bacia que conecta diferentes paisagens</h2>
+  <p class="lead">
+    Uma bacia hidrográfica é a área em que as águas das chuvas e de seus cursos d’água escoam
+    para um mesmo rio principal e seus afluentes. A Bacia do São Francisco ocupa uma grande área
+    do território brasileiro e acompanha o rio desde suas nascentes em Minas Gerais até sua foz
+    entre Alagoas e Sergipe.
+  </p>
+  <div class="note">
+    <strong>Por que ela chama tanta atenção?</strong><br>
+    Porque reúne ambientes muito diferentes, atravessa áreas de importância econômica e social
+    e possui papel importante no abastecimento, na agricultura, na geração de energia e na navegação.
+  </div>
+</section>
+
+<section id="numeros">
+  <span class="pill">Em números</span>
+  <h2>A dimensão do São Francisco</h2>
+  <div class="grid">
+    <div class="card"><strong>≈ 639 mil km²</strong>Área de drenagem da bacia.</div>
+    <div class="card"><strong>≈ 2.863 km</strong>Extensão do rio considerando a nascente geográfica indicada pela Codevasf.</div>
+    <div class="card"><strong>7</strong>Unidades da Federação abrangidas pela bacia: MG, GO, BA, PE, AL, SE e DF.</div>
+    <div class="card"><strong>4</strong>Regiões fisiográficas usadas no planejamento: Alto, Médio, Submédio e Baixo São Francisco.</div>
+  </div>
+</section>
+
+<section id="regioes">
+  <span class="pill">Divisão da bacia</span>
+  <h2>Quatro regiões fisiográficas</h2>
+  <div class="timeline">
+    <div class="region"><h3>01 · Alto São Francisco</h3><p>Região das nascentes até a área de Pirapora (MG). É a porção mais ao sul do curso principal.</p></div>
+    <div class="region"><h3>02 · Médio São Francisco</h3><p>Estende-se de Pirapora (MG) até a região de Remanso (BA), abrangendo uma grande área da bacia.</p></div>
+    <div class="region"><h3>03 · Submédio São Francisco</h3><p>Vai de Remanso (BA) até Paulo Afonso (BA), região marcada por grandes reservatórios e aproveitamento hidrelétrico.</p></div>
+    <div class="region"><h3>04 · Baixo São Francisco</h3><p>Segue de Paulo Afonso até a foz, na divisa entre Alagoas e Sergipe.</p></div>
+  </div>
+</section>
+
+<section id="importancia">
+  <span class="pill">Por que é importante?</span>
+  <h2>Água com muitos usos</h2>
+  <p class="lead">A água da região atende a diferentes necessidades da população e das atividades econômicas.</p>
+  <div class="uses">
+    <div class="use">Abastecimento</div><div class="use">Irrigação</div><div class="use">Agricultura</div>
+    <div class="use">Energia</div><div class="use">Navegação</div><div class="use">Ecossistemas</div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>Um rio de importância nacional</h3>
+    <p>
+      O São Francisco é o maior rio totalmente brasileiro em extensão. Sua bacia também tem
+      importância histórica e econômica para várias regiões do país.
+    </p>
+  </div>
+</section>
+
+<section id="desafios">
+  <span class="pill">Desafios</span>
+  <h2>Nem tudo são águas tranquilas</h2>
+  <div class="grid">
+    <div class="card"><h3>Secas e estiagens</h3><p>A região apresenta períodos de baixa disponibilidade hídrica, especialmente em áreas do Semiárido.</p></div>
+    <div class="card"><h3>Qualidade da água</h3><p>O cuidado com a qualidade da água é essencial para manter seus diferentes usos e proteger os ecossistemas.</p></div>
+    <div class="card"><h3>Uso múltiplo</h3><p>Abastecimento, irrigação, energia, navegação e outros usos precisam ser conciliados na gestão dos recursos hídricos.</p></div>
+  </div>
+</section>
+
+<section id="fontes" class="sources">
+  <span class="pill">Fontes consultadas</span>
+  <h2>De onde vieram as informações?</h2>
+  <p>Os dados principais desta página foram organizados a partir de fontes institucionais:</p>
+  <ul>
+    <li><a href="https://www.gov.br/ana/pt-br/assuntos/gestao-das-aguas/panorama-das-aguas/regioes-hidrograficas/regiao-hidrografica-sao-francisco/regiao-hidrografica-sao-francisco" target="_blank">Agência Nacional de Águas e Saneamento Básico (ANA)</a></li>
+    <li><a href="https://www.gov.br/codevasf/pt-br/acesso-a-informacao/institucional/area-de-atuacao/bacias-hidrograficas" target="_blank">Codevasf — Bacias Hidrográficas</a></li>
+    <li><a href="https://cbhsaofrancisco.org.br/a-bacia/" target="_blank">Comitê da Bacia Hidrográfica do Rio São Francisco (CBHSF)</a></li>
+  </ul>
+  <p style="color:#71879a;font-size:.9rem">Página criada para fins educacionais. Dados e descrições podem ser atualizados conforme novas publicações oficiais.</p>
+</section>
+</main>
+
+<footer>
+  <strong>Bacia Hidrográfica do Rio São Francisco</strong><br>
+  Trabalho escolar • Página informativa
+</footer>
+</body>
+</html>
